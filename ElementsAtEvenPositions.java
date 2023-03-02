@@ -16,8 +16,10 @@ public class ElementsAtEvenPositions {
         }
 
         System.out.print("Elements present on even positions are: ");
-        for (int i = 1; i < arr.length; i += 2) {
-            System.out.print(arr[i] + " ");
+         for (int i = 0; i < arr.length; i++) {
+            if (i % 2 == 0) {
+                System.out.print(arr[i] + " ");
+            }
         }
     }
 }
