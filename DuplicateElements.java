@@ -19,18 +19,10 @@ public class DuplicateElements {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
+                // check if elements at i and j are equal
                 if (arr[i] == arr[j]) {
-                    boolean isDuplicate = false;
-                    for (int k = 0; k < i; k++) {
-                        if (arr[i] == arr[k]) {
-                            isDuplicate = true;
-                            break;
-                        }
-                    }
-                    if (!isDuplicate) {
-                        System.out.print(arr[i] + " ");
-                    }
-                    break;
+                    // print the duplicate element
+                    System.out.print(arr[j] + " ");
                 }
             }
         }
